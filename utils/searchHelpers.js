@@ -61,5 +61,5 @@ export function calculateRelevanceScore(article, query) {
   // Content 
   const contentMatches = (content.match(new RegExp(lowerQuery, 'gi')) || []).length;
   score += Math.min(contentMatches * 10, 50);
-  return score;
+  
 }
